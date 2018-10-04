@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import ListEntry from './ListEntry.jsx';
+import React, { Component } from "react";
+import ListEntry from "./ListEntry.jsx";
 
 class List extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      todo: '',
+      todo: "",
       todos: []
     };
     this.onChangeHandler = this.onChangeHandler.bind(this);
     this.onSubmitHandler = this.onSubmitHandler.bind(this);
-    this.onClickEvent = this.onClickEvent.bind(this);
+    this.deleteOnClick = this.deleteOnClick.bind(this);
   }
 
   onChangeHandler(e) {

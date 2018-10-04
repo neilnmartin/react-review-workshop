@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import List from './List.jsx';
+import React, { Component } from "react";
+import List from "./List.jsx";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      first: '',
-      last: ''
+      first: "",
+      last: ""
     };
     this.onChangeHandler = this.onChangeHandler.bind(this);
   }
@@ -20,14 +20,14 @@ class App extends Component {
   render() {
     const { first, last } = this.state;
     return <List />;
-    if (this.state.first === 'David' && this.state.last === 'Engelstad') {
+    if (this.state.first === "Neil" && this.state.last === "Martin") {
       return <List />;
     } else {
       return (
         <div>
           First: <input name="first" onChange={this.onChangeHandler} />
           <br />
-          Password:{' '}
+          Password:{" "}
           <input name="last" type="password" onChange={this.onChangeHandler} />
         </div>
       );
