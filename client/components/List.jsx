@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import ListEntry from './ListEntry.jsx';
+import React, { Component } from "react";
+import ListEntry from "./ListEntry.jsx";
 
 class List extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      item: '',
+      item: "",
       items: []
     };
     this.onChangeHandler = this.onChangeHandler.bind(this);
